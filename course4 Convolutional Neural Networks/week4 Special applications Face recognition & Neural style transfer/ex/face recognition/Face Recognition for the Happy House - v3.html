@@ -12438,7 +12438,7 @@ of the L2 distance, to the threshold 0.7.)</p>
     <span class="c1">### START CODE HERE ###</span>
     
     <span class="c1"># Step 1: Compute the encoding for the image. Use img_to_encoding() see example above. (≈ 1 line)</span>
-    <span class="n">encoding</span> <span class="o">=</span> <span class="n">img_to_encoding</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">FRmodel</span><span class="p">)</span> <span class="c1"># None</span>
+    <span class="n">encoding</span> <span class="o">=</span> <span class="n">img_to_encoding</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span> <span class="c1"># None</span>
     
     <span class="c1"># Step 2: Compute distance with identity's image (≈ 1 line)</span>
     <span class="n">dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">encoding</span> <span class="o">-</span> <span class="n">database</span><span class="p">[</span><span class="n">identity</span><span class="p">])</span> <span class="c1"># None</span>
